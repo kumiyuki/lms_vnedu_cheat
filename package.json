@@ -1,0 +1,30 @@
+{
+  "name": "lms_vnedu_cheat",
+  "author": {
+    "name": "kumiyuki",
+    "url": "https://github.com/kumiyuki"
+  },
+  "module": "index.js",
+  "type": "module",
+  "kumiyui": {
+    "headers": {
+      "name": "lms_vnedu_cheat",
+      "version": "2026-10-16",
+      "description": "cheat for saas lms.vnedu.vn",
+      "author": "kumiyuki",
+      "include": ["/^https?:\\/\\/.*\\.lms\\.vnedu\\.vn\\/.*$/"]
+    },
+    "entry": "./index.js",
+    "output": "./dist/lms_vnedu_cheat.user.js"
+  },
+  "scripts": {
+    "build": "bun kumiyui build --minify",
+    "build-no-minify": "bun kumiyui build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "dependencies": {
+    "kumiyui": "github:kumiyuki/kumiyui"
+  }
+}
