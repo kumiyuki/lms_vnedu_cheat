@@ -6,7 +6,7 @@ recently, I have made a cheat for `lms.vnedu.vn` platform. I don't know what to 
 1. install userscript extension. (I recommend using tampermonkey)
 2. install the script (it's minified; however, you can still check the source code):
 - **click on the raw link**: https://raw.githubusercontent.com/kumiyuki/azota_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
-3. press `Install`
+3. press `Install`.
 
 ## modules
 - [bypass_anti_cheat](./modules/anti_cheat.js): stop lms.vnedu.vn from tracking whether you exit fullscreen or switch tabs.
