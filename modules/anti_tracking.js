@@ -5,7 +5,6 @@ let is_toggled = false;
 Network.register_network_hook("before", (req) => {
   if (!is_toggled) return;
   const url = req?.args[0];
-  console.log(url)
   if (
     url.includes("/user/logged") ||
     url.includes("console-smartux.vnpt.vn/i/bulk")
