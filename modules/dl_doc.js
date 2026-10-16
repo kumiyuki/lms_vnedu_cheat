@@ -94,7 +94,7 @@ export const dl_doc = ({ logger }) => {
   return {
     command_name: "download document pages/presentation slides",
     command: "dl_doc",
-    aliases: ["dl!doc", "dl_pdf", "dl!pdf", "dl_presentation_slides", "dl_presentation_slide", "dl_slide", "rip_slide", "dl!slide", "rip!slide"],
+    aliases: ["dl!doc", "dl_pdf", "dl!pdf", "dl_presentation_slides", "dl_presentation_slide", "dl_slide", "rip_slide", "dl!slide"],
     description: "perform a 1:1 download of the course document pages (note: some documents might be uploaded as images)",
     is_toggle: false,
     callback_fn: main
