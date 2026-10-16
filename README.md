@@ -28,6 +28,7 @@ recently, I have made a cheat for `lms.vnedu.vn` platform. I don't know what to 
 > for auto filling feature in [get_answers](./modules/get_answers.js) module, you can use:
 > - `g!ans true` to turn on auto filling (you will need to refresh the page after to see the changes)
 > - `g!ans false` to just show the answer in console tab of devtool.
+>
 > with `g!ans` is an alias of `get_answers` command.
 
 # disclaimer
