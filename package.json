@@ -13,7 +13,9 @@
       "description": "cheat for saas lms.vnedu.vn",
       "author": "kumiyuki",
       "include": ["/^https?:\\/\\/.*\\.lms\\.vnedu\\.vn\\/.*$/"],
-      "require": ["https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.2/jszip.min.js"]
+      "require": ["https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.2/jszip.min.js"],
+      "downloadURL": "https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js",
+      "updateURL": "https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js"
     },
     "entry": "./index.js",
     "output": "./dist/lms_vnedu_cheat.user.js"

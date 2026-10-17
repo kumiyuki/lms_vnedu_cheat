@@ -3,6 +3,8 @@
 // @version         2026-10-16
 // @description     cheat for saas lms.vnedu.vn
 // @author          kumiyuki
+// @downloadURL     https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
+// @updateURL       https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
 // @run-at          document-start
 // @include         /^https?:\/\/.*\.lms\.vnedu\.vn\/.*$/
 // @grant           GM_setValue
