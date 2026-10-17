@@ -16,7 +16,6 @@ const logger = new Logger({
   anti_cheat(),
   anti_tracking(),
   no_timer(),
-
   // create a logger for get_answers
   get_answers({ logger: logger.child("g!ans") }),
   auto_finish(),
