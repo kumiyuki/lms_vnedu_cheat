@@ -20,10 +20,12 @@
       "updateURL": "https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js"
     },
     "entry": "./index.js",
-    "output": "./dist/lms_vnedu_cheat.user.js"
+    "output": "./dist/lms_vnedu_cheat.user.js",
+    "minified_output_path": "./dist/lms_vnedu_cheat.min.user.js"
   },
   "scripts": {
-    "build": "bun kumiyui build --minify",
+    "build": "bun kumiyui build --both",
+    "build-minify": "bun kumiyui build --minify",
     "build-no-minify": "bun kumiyui build"
   },
   "devDependencies": {
