@@ -6,7 +6,7 @@
 // @author          kumiyuki
 // @include         /^https?:\/\/.*\.lms\.vnedu\.vn\/.*$/
 // @require         https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.2/jszip.min.js
-// @require         https://cdn.jsdelivr.net/gh/kumiyuki/kumiyui@HEAD/cdn_build/dist/kumiyui.min.js
+// @require         https://cdn.jsdelivr.net/gh/kumiyuki/kumiyui@v1.4.4/cdn_build/dist/kumiyui.min.js
 // @license         GPL-3.0
 // @downloadURL     https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
 // @updateURL       https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
