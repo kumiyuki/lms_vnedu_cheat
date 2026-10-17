@@ -5,7 +5,7 @@ recently, I have made a cheat for `lms.vnedu.vn` platform. I don't know what to 
 ## installation
 1. install userscript extension. (I recommend using tampermonkey)
 2. install the script (it's minified; however, you can still check the source code):
-- **click on the raw link**: https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
+- **click on the raw link**: https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.min.user.js
 3. press `Install`
 
 ## modules
