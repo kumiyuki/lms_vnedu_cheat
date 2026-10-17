@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            vnEdu LMS cheat
-// @version         2026-10-18
+// @version         2026-10-20
 // @namespace       https://github.com/kumiyuki/lms_vnedu_cheat/
 // @description     cheat for saas lms.vnedu.vn
 // @author          kumiyuki
