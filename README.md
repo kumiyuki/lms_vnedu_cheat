@@ -9,11 +9,12 @@ recently, I have made a cheat for `lms.vnedu.vn` platform. I don't know what to 
 3. press `Install`
 
 ## modules
-- [bypass_anti_cheat](./modules/anti_cheat.js): stop lms.vnedu.vn from tracking whether you exit fullscreen or switch tabs.
+- [bypass_anti_cheat](./modules/anti_cheat.js): stop lms.vnedu.vn from tracking and notifying teacher whether you exit fullscreen or switch tabs.
 - [anti_tracking](./modules/anti_tracking.js): prevent lms.vnedu.vn from sending telemetry data back to their server.
 - [auto_finish](./modules/auto_finish.js): auto finish the current course on the page you are on (usually on route /app/vao-hoc/...)
 - [get_answers](./modules/get_answers.js): retrieve the exam's answers. (if you use auto_fill, it will automatically fill the answers)
 - [no_timer](./modules/no_timer.js): make the exam has infinite time
+- [dl_doc](./modules/dl_doc.js): download the course's document or presentation images.
 
 ## how to use
 1. open devtool when you get to the `{school name}.lms.vnedu.vn`
