@@ -8,7 +8,7 @@
   "type": "module",
   "kumiyui": {
     "headers": {
-      "name": "lms_vnedu_cheat",
+      "name": "vnEdu LMS cheat",
       "version": "2026-10-16",
       "namespace": "https://github.com/kumiyuki/lms_vnedu_cheat/",
       "description": "cheat for saas lms.vnedu.vn",
