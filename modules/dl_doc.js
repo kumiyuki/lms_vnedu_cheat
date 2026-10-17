@@ -52,42 +52,62 @@ export const dl_doc = ({ logger }) => {
       // get images data
       const arr_img = document_pages.data ?? [];
 
-      const compressed = new JSZip();
+      for (let index = 0; index < arr_img.length; index++) {
+        const img = arr_img[index];
+        await new Promise((resolve) => setTimeout(resolve, 2500));
+        await new Promise(async (resolve) => {
+          try {
+            const response = await fetch(img, { credentials: "include" });
+            const blob = await response.blob();
 
-      const fetch_promises = arr_img.map(async (img, index) => {
-        try {
-          const response = await fetch(img, { credentials: "include" });
-          const blob = await response.blob();
-          compressed.file(`image_${index + 1}.jpg`, blob);
-          logger.info(`successfully added image_${index + 1}.jpg to the zip file.`)
-        } catch (e) {
-          logger.error(`failed to include image_${index + 1}.jpg, error:`, e);
-        }
-      })
+            // file extension
+            let file_extension = ".png";
+            if (blob.type) {
+              const mime_map = {
+                "image/png": ".png",
+                "image/jpeg": ".jpg",
+                "image/gif": ".gif",
+                "image/webp": ".webp",
+                "image/svg+xml": ".svg",
+                "application/pdf": ".pdf"
+              }
 
-      // wait until all files get added to the zip file
-      await Promise.all(fetch_promises);
-      logger.info("all images retrieved. compressing files into a single bundle...");
+              if (mime_map[blob.type])
+                file_extension = mime_map[blob.type];
+            }
 
-      try {
-        const zip_blob = await compressed.generateAsync({ type: "blob" });
-        const download_url = URL.createObjectURL(zip_blob);
+            // check for blob size
+            if (blob.size <= 0)
+              return logger.error(`image_${index + 1}${file_extension} return empty blob!!`)
 
-        const download_link = document.createElement("a");
-        download_link.href = download_url;
-        download_link.download = `dl_img_${Date.now()}.zip`;
+            // download
+            const download_url = URL.createObjectURL(blob);
 
-        document.body.appendChild(download_link);
-        download_link.click();
-        document.body.removeChild(download_link);
-        download_link.remove();
+            const download_link = document.createElement("a");
+            download_link.href = download_url;
+            download_link.download = `image_${index + 1}_${Date.now()}${file_extension}`;
 
-        // free the memory
-        URL.revokeObjectURL(download_url);
-        logger.info("zip file downloaded!")
-      } catch (e) {
-        logger.error("failed to generate or download the zip package:", e);
+            document.body.appendChild(download_link);
+            download_link.click();
+            document.body.removeChild(download_link);
+            download_link.remove();
+
+            // free the memory
+            URL.revokeObjectURL(download_url);
+
+            // success
+            logger.info(`successfully downloaded image_${index + 1}${file_extension}`);
+            resolve();
+          } catch (e) {
+            logger.error(`failed to download image_${index + 1}${file_extension}, error:`, e);
+            resolve();
+          }
+        })
       }
+
+      // all image downloaded
+      await Promise.all(fetch_promises);
+      logger.info("all images downloaded!!");
     }
   }
 
