@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name            lms_vnedu_cheat
 // @version         2026-10-16
+// @namespace       https://github.com/kumiyuki/lms_vnedu_cheat/
 // @description     cheat for saas lms.vnedu.vn
 // @author          kumiyuki
+// @license         GPL-3.0
 // @downloadURL     https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
 // @updateURL       https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
 // @run-at          document-start
