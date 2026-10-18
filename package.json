@@ -23,7 +23,7 @@
     "minified_output_path": "./dist/lms_vnedu_cheat.min.user.js"
   },
   "scripts": {
-    "build": "bun kumiyui build --both",
+    "build": "bun kumiyui build --both --bundle-kumiyui",
     "build-minify": "bun kumiyui build --minify",
     "build-no-minify": "bun kumiyui build"
   },
