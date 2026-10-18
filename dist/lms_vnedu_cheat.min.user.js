@@ -5,7 +5,6 @@
 // @description     cheat for saas lms.vnedu.vn
 // @author          kumiyuki
 // @include         /^https?:\/\/.*\.lms\.vnedu\.vn\/.*$/
-// @require         https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.2/jszip.min.js
 // @license         GPL-3.0
 // @downloadURL     https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
 // @updateURL       https://raw.githubusercontent.com/kumiyuki/lms_vnedu_cheat/refs/heads/main/dist/lms_vnedu_cheat.user.js
