@@ -9,7 +9,7 @@
   "kumiyui": {
     "headers": {
       "name": "vnEdu LMS cheat",
-      "version": "2026-10-22",
+      "version": "2026-10-24",
       "namespace": "https://github.com/kumiyuki/lms_vnedu_cheat/",
       "description": "cheat for saas lms.vnedu.vn",
       "author": "kumiyuki",
@@ -31,6 +31,6 @@
     "@types/bun": "latest"
   },
   "dependencies": {
-    "kumiyui": "github:kumiyuki/kumiyui#v2.0.4"
+    "kumiyui": "github:kumiyuki/kumiyui#v2.0.6"
   }
 }
